@@ -4,195 +4,330 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - AfriConnect Summit</title>
+    <title>Contact - AfriConnect Summit 2026</title>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css">
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
+
 <body>
 
-    <header>
-        <nav>
-            <!-- Logo -->
-            <a href="index.html" class="logo">
-                <img src="images/image1.jpeg" alt="Logo AfriConnect Summit">
-                <span>AfriConnect Summit</span>
-            </a>
+<header>
 
-            <!-- Menu -->
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="programme.html">Programme</a></li>
-                <li><a href="intervenants.html">Intervenants</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+    <nav>
 
-            <!-- Bouton thème -->
-            <button aria-label="Changer de thème">
-                🌙
-            </button>
+        <a href="index.html" class="logo">
+            <img src="images/image1.jpeg" alt="Logo AfriConnect Summit">
+            <span>AfriConnect Summit</span>
+        </a>
 
-            <!-- Menu hamburger -->
-            <button aria-label="Ouvrir le menu">
-                ☰
-            </button>
-        </nav>
-    </header>
 
-    <main>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="programme.html">Programme</a></li>
+            <li><a href="intervenants.html">Intervenants</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
 
-        <!-- HERO INTERNE -->
-        <section class="hero-interne">
 
-            <h1>Inscription & Contact</h1>
+        <button aria-label="Changer de thème">🌙</button>
+        <button aria-label="Ouvrir le menu">☰</button>
 
-            <p>
-                <a href="index.html">Accueil</a> >
-                <span>Contact</span>
-            </p>
+    </nav>
 
-        </section>
+</header>
 
-        <!-- FORMULAIRE -->
-        <section class="contact-container">
 
-            <!-- Formulaire -->
-            <div class="contact-form">
 
-                <h2>Réservez votre place</h2>
+<main>
 
-                <form id="contactForm">
 
-                    <label for="nom">Nom complet</label>
-                    <input type="text" id="nom" required>
+<!-- HERO INTERNE -->
 
-                    <label for="email">Email</label>
-                    <input type="email" id="email" required>
+<section class="hero-interne">
 
-                    <label for="telephone">Téléphone</label>
-                    <input type="tel" id="telephone" required>
+    <h1>Inscription & Contact</h1>
 
-                    <label for="type">Type de participant</label>
+    <p>
+        <a href="index.html">Accueil</a> >
+        <span>Contact</span>
+    </p>
 
-                    <select id="type">
+</section>
 
-                        <option>Étudiant</option>
-                        <option>Développeur</option>
-                        <option>Entrepreneur</option>
-                        <option>Entreprise</option>
 
-                    </select>
 
-                    <label for="pays">Pays</label>
 
-                    <select id="pays">
+<!-- FORMULAIRE + INFORMATIONS -->
 
-                        <option>Sénégal</option>
-                        <option>Côte d'Ivoire</option>
-                        <option>Cameroun</option>
-                        <option>Maroc</option>
-                        <option>Algérie</option>
-                        <option>Tunisie</option>
-                        <option>Rwanda</option>
-                        <option>Ghana</option>
-                        <option>Nigeria</option>
-                        <option>Kenya</option>
+<section class="contact-container">
 
-                    </select>
 
-                    <label for="message">Motivation</label>
+<div class="contact-form">
 
-                    <textarea id="message" rows="6"></textarea>
+<h2>Réservez votre place</h2>
 
-                    <button type="submit">
-                        Envoyer
-                    </button>
 
-                </form>
+<form id="contactForm">
 
-            </div>
 
-            <!-- Informations -->
-            <div class="contact-info">
+<label for="nom">Nom complet</label>
+<input type="text" id="nom" name="nom" required>
 
-                <h2>Informations</h2>
+<small id="nomError"></small>
 
-                <p>📍 Dakar, Sénégal</p>
 
-                <p>📞 +221 77 123 45 67</p>
 
-                <p>✉ contact@africonnectsummit.com</p>
+<label for="email">Email</label>
+<input type="email" id="email" name="email" required>
 
-                <p>
-                    Notre équipe est disponible pour répondre à toutes vos questions concernant l'événement.
-                </p>
+<small id="emailError"></small>
 
-            </div>
 
-        </section>
 
-        <!-- FAQ -->
-        <section class="faq">
+<label for="telephone">Téléphone</label>
+<input type="tel" id="telephone" name="telephone" required>
 
-            <h2>Questions fréquentes</h2>
+<small id="telephoneError"></small>
 
-            <details>
-                <summary>Comment participer ?</summary>
-                <p>Inscrivez-vous via le formulaire.</p>
-            </details>
 
-            <details>
-                <summary>La conférence est-elle payante ?</summary>
-                <p>Oui, plusieurs formules sont proposées.</p>
-            </details>
 
-            <details>
-                <summary>Recevrai-je un certificat ?</summary>
-                <p>Oui, à la fin de l'événement.</p>
-            </details>
 
-            <details>
-                <summary>Puis-je annuler mon inscription ?</summary>
-                <p>Oui, avant la date limite.</p>
-            </details>
+<label for="type">Type de participation</label>
 
-            <details>
-                <summary>Les repas sont-ils inclus ?</summary>
-                <p>Oui, durant les trois journées.</p>
-            </details>
+<select id="type" name="type" required>
 
-        </section>
+<option value="">Choisir</option>
+<option>Étudiant</option>
+<option>Développeur</option>
+<option>Entrepreneur</option>
+<option>Entreprise</option>
 
-        <!-- CARTE -->
-        <section class="map">
+</select>
 
-            <h2>Lieu de l'événement</h2>
 
-            <iframe src="https://www.google.com/maps?q=Dakar&output=embed" width="100%" height="400" loading="lazy">
-            </iframe>
 
-        </section>
+<label for="pays">Pays africain</label>
 
-    </main>
+<select id="pays" name="pays" required>
 
-    <footer>
+<option value="">Choisir</option>
+<option>Sénégal</option>
+<option>Côte d'Ivoire</option>
+<option>Cameroun</option>
+<option>Maroc</option>
+<option>Algérie</option>
+<option>Tunisie</option>
+<option>Rwanda</option>
+<option>Ghana</option>
+<option>Nigeria</option>
+<option>Kenya</option>
 
-         <footer>
+</select>
+
+
+
+<label for="message">Motivation</label>
+
+<textarea 
+id="message"
+name="message"
+rows="6"
+required></textarea>
+
+<small id="messageError"></small>
+
+
+
+<button class="btn-submit" type="submit">
+Envoyer
+</button>
+
+
+<p id="successMessage"></p>
+
+
+</form>
+
+
+</div>
+
+
+
+
+
+<!-- INFORMATIONS -->
+
+
+<div class="contact-info">
+
+
+<h2>Informations</h2>
+
+
+<p>📍 Dakar, Sénégal</p>
+
+<p>📞 +221 77 123 45 67</p>
+
+<p>✉ contact@africonnectsummit.com</p>
+
+
+<p>
+Notre équipe est disponible pour répondre
+à toutes vos questions concernant l'événement.
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- FAQ -->
+
+<section class="faq">
+
+
+<h2>Questions fréquentes</h2>
+
+
+
+<div class="faq-item">
+
+<input type="checkbox" id="q1">
+
+<label for="q1">
+Comment participer ?
+</label>
+
+<p>
+Inscrivez-vous via le formulaire d'inscription.
+</p>
+
+</div>
+
+
+
+<div class="faq-item">
+
+<input type="checkbox" id="q2">
+
+<label for="q2">
+La conférence est-elle payante ?
+</label>
+
+<p>
+Plusieurs formules de participation sont proposées.
+</p>
+
+</div>
+
+
+
+
+<div class="faq-item">
+
+<input type="checkbox" id="q3">
+
+<label for="q3">
+Recevrai-je un certificat ?
+</label>
+
+<p>
+Oui, un certificat sera délivré après l'événement.
+</p>
+
+</div>
+
+
+
+
+<div class="faq-item">
+
+<input type="checkbox" id="q4">
+
+<label for="q4">
+Puis-je annuler mon inscription ?
+</label>
+
+<p>
+Oui, selon les conditions d'annulation.
+</p>
+
+</div>
+
+
+
+
+<div class="faq-item">
+
+<input type="checkbox" id="q5">
+
+<label for="q5">
+Les repas sont-ils inclus ?
+</label>
+
+<p>
+Oui, pendant les trois jours du sommet.
+</p>
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- CARTE -->
+
+<section class="map">
+
+
+<h2>Lieu de l'événement</h2>
+
+
+<iframe
+src="https://www.google.com/maps?q=Dakar&output=embed"
+width="100%"
+height="400"
+loading="lazy">
+</iframe>
+
+
+</section>
+
+
+
+</main>
+
+
+
+
+
+<!-- FOOTER -->
+
+
+<footer>
 
         <div>
 
             <h3>AfriConnect Summit</h3>
 
-            <p>
-                L'événement incontournable de la Tech africaine.
-            </p>
+            <p>L'événement incontournable de la Tech africaine.</p>
 
         </div>
 
@@ -203,11 +338,8 @@
             <ul>
 
                 <li><a href="index.html">Accueil</a></li>
-
                 <li><a href="programme.html">Programme</a></li>
-
                 <li><a href="intervenants.html">Intervenants</a></li>
-
                 <li><a href="contact.html">Contact</a></li>
 
             </ul>
@@ -218,14 +350,13 @@
 
             <h3>Suivez-nous</h3>
 
-            <!-- Les icônes seront ajoutées plus tard -->
-
         </div>
-        <!--bouton retour en haut apres-->
 
     </footer>
 
-    <script src="js/main.js"></script>
+
+<script src="js/main.js"></script>
+
 
 </body>
 
