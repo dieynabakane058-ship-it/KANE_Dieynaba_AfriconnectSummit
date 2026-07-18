@@ -1,0 +1,180 @@
+
+/*navbar*/
+nav{
+width:90%;
+ max-width:1200px;
+ margin:auto;
+ display:flex;
+ justify-content:space-between;
+align-items:center;
+padding:18px 0;
+}
+ nav ul{
+display:flex;
+gap:35px;
+ }
+
+nav ul a{
+ font-weight:600;
+ transition:.3s;
+}
+
+nav ul a:hover{
+ color:#1f75f7;   
+}
+nav button{
+  border:none;
+ background:none;
+ cursor:pointer;
+ font-size:1.3rem;
+}
+
+/* HEADER  */
+
+header{
+width:100%;
+ background:white;
+position:sticky;
+top:0;
+ z-index:1000;
+ box-shadow:0 4px 20px rgba(0,0,0,.10);
+}
+
+/*principale*/
+
+*{ margin:0;
+ padding:0;
+ box-sizing:border-box;
+}
+
+html{
+ scroll-behavior:smooth;
+}
+
+body{ font-family:"Inter",sans-serif;
+ background:#F8FAFC;
+ color:#1F2937;
+ line-height:1.6;
+}
+
+img{
+max-width:100%;
+ display:block;
+}
+
+a{
+ text-decoration:none;
+color:inherit;
+}
+
+ul{
+ list-style:none;
+}
+/*logo*/
+.logo{
+display:flex;
+align-items:center;
+ gap:12px;
+font-size:1.3rem;
+font-weight:700;
+ color:#2563EB;
+}
+
+.logo img{
+ width:55px;
+ height:55px;
+ border-radius:50%;
+
+}
+/*HERO */
+
+#hero{
+ width:90%;
+ max-width:1200px;
+min-height:calc(100vh - 80px);
+margin:auto;
+ display:grid;
+  grid-template-columns:repeat(2,1fr);
+ align-items:center;
+ gap:70px;
+ padding-top: 80px;
+}
+.hero-content h1{
+font-family:"Space Grotesk",sans-serif;
+ font-size:3.8rem;
+ line-height:1.2;
+ margin:20px 0;
+}
+
+.hero-content p{
+ font-size:1.1rem;
+ color:#555;
+}
+.hero-buttons{
+display:flex;
+ gap:20px;
+ margin:40px 0;
+}
+
+.hero-badge{
+ display:inline-block;
+ padding:8px 18px;
+background:#FFF7ED;
+color:#F97316;
+ border:1px solid #FDBA74;
+border-radius:999px;
+ font-weight:600;
+ margin-bottom:20px;
+}
+.btn-primary{
+background:#2563EB;
+ color:white;
+padding:15px 30px;
+ border-radius:12px;
+transition:.3s;
+}
+
+.btn-primary:hover{
+ background:#1D4ED8;
+
+}
+
+.btn-secondary{
+ border:2px solid #2563EB;
+ color:#2563EB;
+padding:15px 30px;
+border-radius:12px;
+transition:.3s;
+}
+
+.btn-secondary:hover{
+background:#2563EB;
+color:white;
+}
+.hero-image img{
+border-radius:25px;
+box-shadow:0 25px 45px rgba(0,0,0,.15);
+width: 100%;
+height: 550px;
+object-fit: cover;
+
+}
+/*counter*/
+.countdown{
+ display:flex;
+gap:20px;
+ margin-top:40px;
+}
+
+.countdown div{
+background:white;
+ padding:20px;
+ border-radius:15px;
+ box-shadow:0 10px 20px rgba(0,0,0,.08);
+ text-align:center;
+}
+
+.countdown h2{
+ color:#f97c16;
+ font-size:2rem;
+}
