@@ -977,47 +977,185 @@ text-align:center;
 
     /* Programme */
     table{
-
-        display:block;
-
-        overflow-x:auto;
-
-        white-space:nowrap;
-
+ display:block;
+ overflow-x:auto;/* gere le debordement Si le contenu est plus large que son conteneur, 
+ afficher une barre de défilement horizontale.*/
+ white-space:nowrap;
     }
     .themes-grid{
-
-        grid-template-columns:1fr;
+  grid-template-columns:1fr;
 
     }
 
     /* Contact */
     .contact-container{
-
-        width:90%;
+    width:90%;
 
     }
-
     .contact-form,
     .contact-info{
-
         padding:20px;
-
     }
 
     /* Footer */
     footer{
-
  text-align:center;
-
  flex-direction:column;
-
   align-items:center;
-
     }
 
+}
+/*  FOOTER MODERNE */
+footer{
+    background:#111827;
+    color:white;
+    padding:60px 8%;
+    display:flex;
+    justify-content:space-between;
+    gap:40px;
+    flex-wrap:wrap;/*indique si les éléments d'un conteneur Flexbox doivent rester sur une seule ligne ou
+     passer à la ligne suivante lorsqu'il n'y a plus assez de place.*/
+}
+
+footer h3{
+    margin-bottom:20px;
+    color:#F97316;
+}
+
+footer a{
+    color:#ddd;
+    transition:.3s;
+}
+
+footer a:hover{
+    color:white;
+}
+
+.socials{
+    display:flex;
+    gap:15px;
+}
+
+.top-btn{
+ position:fixed;
+ bottom:25px;
+ right:25px;
+ width:45px;
+ height:45px;
+ border:none;
+ border-radius:50%;
+background:#2563EB;
+ color:white;
+font-size:20px;
+ cursor:pointer;/*changer l'apparence du curseur de la souris lorsqu'il survole un élément.
+Dans ton code*/
 
 }
+.top-btn:hover{
+
+    transform:translateY(-5px);
+
+}
+/* DARK MODE*/
+
+body.dark-mode{
+    background:#0F172A;
+    color:#F8FAFC;
+}
+
+body.dark-mode header{
+    background:#1E293B;
+}
+
+body.dark-mode .contact-form,
+body.dark-mode .contact-info,
+body.dark-mode .speaker-card,
+body.dark-mode .argument-card,
+body.dark-mode article,
+body.dark-mode .faq-item{
+    background:#1E293B;
+    color:white;
+}
+
+body.dark-mode footer{
+    background:#020617;
+}
+
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select{
+    background:#334155;
+    color:white;
+    border:1px solid #475569;
+}
+/* Compte à rebours en mode sombre */
+body.dark-mode .countdown div{
+    background:#1E293B;
+    color:white;
+}
+
+body.dark-mode .countdown h2{
+    color:#F97316;
+}
+
+body.dark-mode .countdown span{
+    color:#F8FAFC;
+}
+/* Sponsors */
+body.dark-mode .sponsor-card{
+    background:#1E293B;
+}
+/* TABLEAU EN MODE SOMBRE */
+
+body.dark-mode table{
+    background:#1E293B;
+    color:white;
+}
+
+body.dark-mode thead{
+    background:#2563EB;
+}
+
+body.dark-mode th{
+    background:#2563EB;
+    color:white;
+}
+
+body.dark-mode tbody tr{
+    background:#1E293B;
+}
+
+body.dark-mode tbody tr:nth-child(even){
+    background:#334155;
+}
+
+body.dark-mode td{
+    background:transparent;
+    color:white;
+    border:1px solid #475569;
+}
+
+/* NAVBAR AU SCROLL */
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000; /*déterminer quel élément apparaît devant ou 
+    derrière un autre lorsque plusieurs éléments se chevauchent.*/
+    background: white;
+    transition: all .3s ease;
+}
+
+header.scrolled{
+    background: rgba(255,255,255,.95);
+    box-shadow: 0 8px 25px rgba(0,0,0,.15);
+}
+body.dark-mode header.scrolled{
+    background: rgba(15,23,42,.95);
+}
+
+
+
 
 
 
