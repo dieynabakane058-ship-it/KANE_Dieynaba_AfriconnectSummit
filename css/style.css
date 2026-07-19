@@ -924,6 +924,7 @@ text-align:center;
 
     }
 
+
     /* Compteur */
     .countdown{
 
@@ -1056,6 +1057,38 @@ Dans ton code*/
     transform:translateY(-5px);
 
 }
+@media (max-width:768px){
+
+    nav{
+        position:relative;
+    }
+
+    nav ul{
+        display:none;
+        flex-direction:column;
+        position:absolute;
+        top:80px;
+        left:0;
+        width:100%;
+        background:#fff;
+        padding:20px;
+        box-shadow:0 10px 20px rgba(0,0,0,.1);
+        gap:20px;
+    }
+
+    nav ul.active{
+        display:flex;
+    }
+
+    .menu-toggle{
+        display:block;
+        font-size:1.8rem;
+        background:none;
+        border:none;
+        cursor:pointer;
+    }
+
+}
 /* DARK MODE*/
 
 body.dark-mode{
@@ -1153,8 +1186,67 @@ header.scrolled{
 body.dark-mode header.scrolled{
     background: rgba(15,23,42,.95);
 }
+/*tableau*/
+.planning{
+    display:none;
+}
 
+.planning.active{
+    display:block;
+}
 
+/*annimation*/
+.argument-card,
+.theme-card,
+.speaker-card{
+    opacity:0;
+    transform:translateY(40px);
+    transition:2s ease;
+}
+
+.argument-card.show,
+.theme-card.show,
+.speaker-card.show{
+    opacity:1;
+    transform:translateY(0);
+}
+/*annimation pour h1*/
+.hero-content h1{
+    animation: heroTitle 1.8s ease forwards;
+}
+
+@keyframes heroTitle{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* ===== Dark mode : menu responsive ===== */
+
+body.dark-mode nav ul{
+    background:#1F2937;
+}
+
+body.dark-mode nav ul li a{
+    color:#F8FAFC;
+}
+
+body.dark-mode nav ul li a:hover{
+    color:#60A5FA;
+}
+
+body.dark-mode .menu-toggle,
+body.dark-mode .theme-btn{
+    color:#F8FAFC;
+}
 
 
 

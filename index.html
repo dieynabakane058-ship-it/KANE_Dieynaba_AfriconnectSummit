@@ -40,9 +40,9 @@
 </button> 
 
             <!-- Menu hamburger -->
-            <button aria-label="Ouvrir le menu">
-                ☰
-            </button>
+           <button class="menu-toggle" aria-label="Ouvrir le menu">
+    ☰
+</button>
         </nav>
     </header>
 
@@ -79,22 +79,22 @@
                 <div class="countdown">
 
                     <div>
-                        <h2>00</h2>
+                        <h2 id="days">00</h2>
                         <span>Jours</span>
                     </div>
 
                     <div>
-                        <h2>00</h2>
+                        <h2 id="hours">00</h2>
                         <span>Heures</span>
                     </div>
 
                     <div>
-                        <h2>00</h2>
+                        <h2 id="minutes">00</h2>
                         <span>Minutes</span>
                     </div>
 
                     <div>
-                        <h2>00</h2>
+                        <h2 id="seconds">00</h2>
                         <span>Secondes</span>
                     </div>
 
@@ -109,33 +109,35 @@
         </section>
 
         <!-- CHIFFRES CLÉS -->
-        <section id="stats">
+       <section id="stats">
 
-            <h2>Nos chiffres clés</h2>
+    <h2>Nos chiffres clés</h2>
 
-            <div class="stats-grid">
+    <div class="stats-grid">
 
-                <article class="stats-card">
-                    <h3>✨1200+</h3>
-                    <p>Participants</p>
-                </article>
+        <article class="stats-card">
+            <h3>✨ <span class="counter" data-target="1200">0</span>+</h3>
+            <p>Participants</p>
+        </article>
 
-                <article class="stats-card">
-                    <h3>📌48</h3>
-                    <p>Intervenants</p>
-                </article>
+        <article class="stats-card">
+            <h3>🎤 <span class="counter" data-target="48">0</span></h3>
+            <p>Intervenants</p>
+        </article>
 
-                <article class="stats-card">
-                    <h3>🗓️3</h3>
-                    <p>Jours</p>
-                </article>
+        <article class="stats-card">
+            <h3>📅 <span class="counter" data-target="3">0</span></h3>
+            <p>Jours</p>
+        </article>
 
-                <article class="stats-card">
-                    <h3>🌜12</h3>
-                    <p>Pays</p>
-                </article>
+        <article class="stats-card">
+            <h3>🌍 <span class="counter" data-target="12">0</span></h3>
+            <p>Pays</p>
+        </article>
 
-            </div>
+    </div>
+
+</section>
 
         </section>
 

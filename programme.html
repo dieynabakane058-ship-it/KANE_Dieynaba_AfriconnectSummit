@@ -36,8 +36,9 @@
 <button id="theme-toggle" aria-label="Changer de thème">🌙</button> 
 
 
-            <button aria-label="Ouvrir le menu">☰</button>
-
+ <button class="menu-toggle" aria-label="Ouvrir le menu">
+    ☰
+</button>
         </nav>
 
     </header>
@@ -63,15 +64,15 @@
 
             <div class="tabs">
 
-                <button class="tab-btn active" id="jour1">Jour 1</button>
-                <button class="tab-btn" id="jour2">Jour 2</button>
-                <button class="tab-btn"  id="jour3">Jour 3</button>
-
+                <button class="tab-btn active" data-target="jour1">Jour 1</button>
+    <button class="tab-btn" data-target="jour2">Jour 2</button>
+    <button class="tab-btn" data-target="jour3">Jour 3</button>
+</div>
             </div>
 
             <!-- Planning Jour 1 -->
 
-            <div class="planning">
+            <div  id="jour1" class="planning active">
 
                 <table>
 
@@ -128,6 +129,126 @@
                 </table>
 
             </div>
+
+
+            <div  id="jour2" class="planning">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Heure</th>
+                            <th>Session</th>
+                            <th>Intervenant</th>
+                            <th>Salle</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>10h00</td>
+                            <td>cloud computing</td>
+                            <td>Seynabou ka</td>
+                            <td>A</td>
+                        </tr>
+
+                        <tr>
+                            <td>11h00</td>
+                            <td>Fintech</td>
+                            <td>Oumar Kane</td>
+                            <td>B</td>
+                        </tr>
+
+                        <tr>
+                            <td>12h00</td>
+                            <td>Pause déjeuner</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+
+                        <tr>
+                            <td>14h00</td>
+                            <td>UX/UI</td>
+                            <td>Samba sene</td>
+                            <td>C</td>
+                        </tr>
+
+                        <tr>
+                            <td>16h00</td>
+                            <td>Table rond</td>
+                            <td>Tous</td>
+                            <td>Hall</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+            <div  id="jour3" class="planning ">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Heure</th>
+                            <th>Session</th>
+                            <th>Intervenant</th>
+                            <th>Salle</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>09h00</td>
+                            <td>Data Science</td>
+                            <td>Maman Fall</td>
+                            <td>A</td>
+                        </tr>
+
+                        <tr>
+                            <td>10h30</td>
+                            <td>Startup Pitch</td>
+                            <td>Amina Traoré</td>
+                            <td>B</td>
+                        </tr>
+
+                        <tr>
+                            <td>12h00</td>
+                            <td>Pause déjeuner</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+
+                        <tr>
+                            <td>14h00</td>
+                            <td>Innovation</td>
+                            <td>Jean Ndzi</td>
+                            <td>C</td>
+                        </tr>
+
+                        <tr>
+                            <td>16h00</td>
+                            <td>cloture</td>
+                            <td>Tous</td>
+                            <td>Hall</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
 
         </section>
 
