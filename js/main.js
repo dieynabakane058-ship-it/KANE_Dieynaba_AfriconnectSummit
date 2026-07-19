@@ -250,3 +250,114 @@ if(menuBtn && navMenu){
     });
 
 }
+
+/*=========================
+   VALIDATION FORMULAIRE
+=========================*/
+
+const form = document.getElementById("contactForm");
+
+if (form) {
+
+    form.addEventListener("submit", function (e) {
+
+        e.preventDefault();
+
+        let isValid = true;
+
+        const nom = document.getElementById("nom");
+        const email = document.getElementById("email");
+        const telephone = document.getElementById("telephone");
+        const type = document.getElementById("type");
+        const pays = document.getElementById("pays");
+        const message = document.getElementById("message");
+        const successMessage = document.getElementById("successMessage");
+
+        // Supprimer les anciens messages
+        document.querySelectorAll(".error").forEach(error => {
+            error.textContent = "";
+        });
+
+        successMessage.textContent = "";
+
+        // Supprimer les anciennes bordures
+        document.querySelectorAll("input, select, textarea").forEach(champ => {
+            champ.classList.remove("input-error");
+            champ.classList.remove("input-success");
+        });
+
+        // Fonction erreur
+        function showError(champ, errorId, texte) {
+            champ.classList.add("input-error");
+            document.getElementById(errorId).textContent = texte;
+            isValid = false;
+        }
+
+        // Fonction succès
+        function showSuccess(champ) {
+            champ.classList.add("input-success");
+        }
+
+        // Nom
+        if (nom.value.trim() === "") {
+            showError(nom, "nomError", "Le nom est obligatoire.");
+        } else {
+            showSuccess(nom);
+        }
+
+        // Email
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!emailRegex.test(email.value.trim())) {
+            showError(email, "emailError", "Adresse email invalide.");
+        } else {
+            showSuccess(email);
+        }
+
+        // Téléphone
+        const telRegex = /^[0-9]{8,}$/;
+
+        if (!telRegex.test(telephone.value.trim())) {
+            showError(telephone, "telephoneError", "Le téléphone doit contenir au moins 8 chiffres.");
+        } else {
+            showSuccess(telephone);
+        }
+
+        // Type
+        if (type.value === "") {
+            showError(type, "typeError", "Choisissez un type de participation.");
+        } else {
+            showSuccess(type);
+        }
+
+        // Pays
+        if (pays.value === "") {
+            showError(pays, "paysError", "Choisissez un pays.");
+        } else {
+            showSuccess(pays);
+        }
+
+        // Message
+        if (message.value.trim().length < 20) {
+            showError(message, "messageError", "Le message doit contenir au moins 20 caractères.");
+        } else {
+            showSuccess(message);
+        }
+
+        // Si tout est valide
+        if (isValid) {
+
+            successMessage.textContent = "✅ Inscription envoyée avec succès !";
+            successMessage.classList.add("success");
+
+            form.reset();
+
+            document.querySelectorAll(".input-success").forEach(champ => {
+                champ.classList.remove("input-success");
+            });
+
+        }
+
+    });
+
+}

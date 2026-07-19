@@ -81,82 +81,66 @@
 
 <form id="contactForm">
 
+    <!-- Nom -->
+    <label for="nom">Nom complet</label>
+    <input type="text" id="nom" name="nom" required>
+    <small class="error" id="nomError"></small>
 
-<label for="nom">Nom complet</label>
-<input type="text" id="nom" name="nom" required>
+    <!-- Email -->
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+    <small class="error" id="emailError"></small>
 
-<small id="nomError"></small>
+    <!-- Téléphone -->
+    <label for="telephone">Téléphone</label>
+    <input type="tel" id="telephone" name="telephone" required>
+    <small class="error" id="telephoneError"></small>
 
+    <!-- Type de participation -->
+    <label for="type">Type de participation</label>
+    <select id="type" name="type" required>
+        <option value="">Choisir</option>
+        <option value="Étudiant">Étudiant</option>
+        <option value="Développeur">Développeur</option>
+        <option value="Entrepreneur">Entrepreneur</option>
+        <option value="Entreprise">Entreprise</option>
+    </select>
+    <small class="error" id="typeError"></small>
 
+    <!-- Pays -->
+    <label for="pays">Pays africain</label>
+    <select id="pays" name="pays" required>
+        <option value="">Choisir</option>
+        <option value="Sénégal">Sénégal</option>
+        <option value="Côte d'Ivoire">Côte d'Ivoire</option>
+        <option value="Cameroun">Cameroun</option>
+        <option value="Maroc">Maroc</option>
+        <option value="Algérie">Algérie</option>
+        <option value="Tunisie">Tunisie</option>
+        <option value="Rwanda">Rwanda</option>
+        <option value="Ghana">Ghana</option>
+        <option value="Nigeria">Nigeria</option>
+        <option value="Kenya">Kenya</option>
+    </select>
+    <small class="error" id="paysError"></small>
 
-<label for="email">Email</label>
-<input type="email" id="email" name="email" required>
+    <!-- Motivation -->
+    <label for="message">Message / Motivation</label>
+    <textarea
+        id="message"
+        name="message"
+        rows="6"
+        required
+    ></textarea>
+    <small class="error" id="messageError"></small>
 
-<small id="emailError"></small>
+    <!-- Bouton -->
+    <button class="btn-submit" type="submit">
+        Envoyer
+    </button>
 
-
-
-<label for="telephone">Téléphone</label>
-<input type="tel" id="telephone" name="telephone" required>
-
-<small id="telephoneError"></small>
-
-
-
-
-<label for="type">Type de participation</label>
-
-<select id="type" name="type" required>
-
-<option value="">Choisir</option>
-<option>Étudiant</option>
-<option>Développeur</option>
-<option>Entrepreneur</option>
-<option>Entreprise</option>
-
-</select>
-
-
-
-<label for="pays">Pays africain</label>
-
-<select id="pays" name="pays" required>
-
-<option value="">Choisir</option>
-<option>Sénégal</option>
-<option>Côte d'Ivoire</option>
-<option>Cameroun</option>
-<option>Maroc</option>
-<option>Algérie</option>
-<option>Tunisie</option>
-<option>Rwanda</option>
-<option>Ghana</option>
-<option>Nigeria</option>
-<option>Kenya</option>
-
-</select>
-
-
-
-<label for="message">Motivation</label>
-
-<textarea 
-id="message"
-name="message"
-rows="6"
-required></textarea>
-
-<small id="messageError"></small>
-
-
-
-<button class="btn-submit" type="submit">
-Envoyer
-</button>
-
-
-<p id="successMessage"></p>
-
+    <!-- Message de succès -->
+    <p id="successMessage" class="success"></p>
 
 </form>
 
