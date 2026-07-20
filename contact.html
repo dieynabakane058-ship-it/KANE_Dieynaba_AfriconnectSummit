@@ -10,7 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -19,333 +21,324 @@
 
 <body>
 
-<header>
+    <header>
 
-    <nav>
+        <nav>
 
-        <a href="index.html" class="logo">
-            <img src="images/image1.jpeg" alt="Logo AfriConnect Summit">
-            <span>AfriConnect Summit</span>
-        </a>
+            <a href="index.html" class="logo">
+                <img src="images/image1.jpeg" alt="Logo AfriConnect Summit">
+                <span>AfriConnect Summit</span>
+            </a>
 
 
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="programme.html">Programme</a></li>
-            <li><a href="intervenants.html">Intervenants</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="intervenants.html">Intervenants</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
 
 
-        <button id="theme-toggle" aria-label="Changer de thème">
-    🌙
-</button> 
+            <button id="theme-toggle" aria-label="Changer de thème">
+                🌙
+            </button>
 
- <button class="menu-toggle" aria-label="Ouvrir le menu">
-    ☰
-</button>
-    </nav>
+            <button class="menu-toggle" aria-label="Ouvrir le menu">
+                ☰
+            </button>
+        </nav>
 
-</header>
+    </header>
 
 
 
-<main>
+    <main>
 
 
-<!-- HERO INTERNE -->
+        <!-- HERO INTERNE -->
 
-<section class="hero-interne">
+        <section class="hero-interne">
 
-    <h1>Inscription & Contact</h1>
+            <h1>Inscription & Contact</h1>
 
-    <p>
-        <a href="index.html">Accueil</a> >
-        <span>Contact</span>
-    </p>
+            <p>
+                <a href="index.html">Accueil</a> >
+                <span>Contact</span>
+            </p>
 
-</section>
+        </section>
 
 
 
 
-<!-- FORMULAIRE + INFORMATIONS -->
+        <!-- FORMULAIRE + INFORMATIONS -->
 
-<section class="contact-container">
+        <section class="contact-container">
 
 
-<div class="contact-form">
+            <div class="contact-form">
 
-<h2>Réservez votre place</h2>
+                <h2>Réservez votre place</h2>
 
 
-<form id="contactForm">
+                <form id="contactForm">
 
-    <!-- Nom -->
-    <label for="nom">Nom complet</label>
-    <input type="text" id="nom" name="nom" required>
-    <small class="error" id="nomError"></small>
+                    <!-- Nom -->
+                    <label for="nom">Nom complet</label>
+                    <input type="text" id="nom" name="nom" required>
+                    <small class="error" id="nomError"></small>
 
-    <!-- Email -->
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" required>
-    <small class="error" id="emailError"></small>
+                    <!-- Email -->
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <small class="error" id="emailError"></small>
 
-    <!-- Téléphone -->
-    <label for="telephone">Téléphone</label>
-    <input type="tel" id="telephone" name="telephone" required>
-    <small class="error" id="telephoneError"></small>
+                    <!-- Téléphone -->
+                    <label for="telephone">Téléphone</label>
+                    <input type="tel" id="telephone" name="telephone" required>
+                    <small class="error" id="telephoneError"></small>
 
-    <!-- Type de participation -->
-    <label for="type">Type de participation</label>
-    <select id="type" name="type" required>
-        <option value="">Choisir</option>
-        <option value="Étudiant">Étudiant</option>
-        <option value="Développeur">Développeur</option>
-        <option value="Entrepreneur">Entrepreneur</option>
-        <option value="Entreprise">Entreprise</option>
-    </select>
-    <small class="error" id="typeError"></small>
+                    <!-- Type de participation -->
+                    <label for="type">Type de participation</label>
+                    <select id="type" name="type" required>
+                        <option value="">Choisir</option>
+                        <option value="Étudiant">Étudiant</option>
+                        <option value="Développeur">Développeur</option>
+                        <option value="Entrepreneur">Entrepreneur</option>
+                        <option value="Entreprise">Entreprise</option>
+                    </select>
+                    <small class="error" id="typeError"></small>
 
-    <!-- Pays -->
-    <label for="pays">Pays africain</label>
-    <select id="pays" name="pays" required>
-        <option value="">Choisir</option>
-        <option value="Sénégal">Sénégal</option>
-        <option value="Côte d'Ivoire">Côte d'Ivoire</option>
-        <option value="Cameroun">Cameroun</option>
-        <option value="Maroc">Maroc</option>
-        <option value="Algérie">Algérie</option>
-        <option value="Tunisie">Tunisie</option>
-        <option value="Rwanda">Rwanda</option>
-        <option value="Ghana">Ghana</option>
-        <option value="Nigeria">Nigeria</option>
-        <option value="Kenya">Kenya</option>
-    </select>
-    <small class="error" id="paysError"></small>
+                    <!-- Pays -->
+                    <label for="pays">Pays africain</label>
+                    <select id="pays" name="pays" required>
+                        <option value="">Choisir</option>
+                        <option value="Sénégal">Sénégal</option>
+                        <option value="Côte d'Ivoire">Côte d'Ivoire</option>
+                        <option value="Cameroun">Cameroun</option>
+                        <option value="Maroc">Maroc</option>
+                        <option value="Algérie">Algérie</option>
+                        <option value="Tunisie">Tunisie</option>
+                        <option value="Rwanda">Rwanda</option>
+                        <option value="Ghana">Ghana</option>
+                        <option value="Nigeria">Nigeria</option>
+                        <option value="Kenya">Kenya</option>
+                    </select>
+                    <small class="error" id="paysError"></small>
 
-    <!-- Motivation -->
-    <label for="message">Message / Motivation</label>
-    <textarea
-        id="message"
-        name="message"
-        rows="6"
-        required
-    ></textarea>
-    <small class="error" id="messageError"></small>
+                    <!-- Motivation -->
+                    <label for="message">Message / Motivation</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                    <small class="error" id="messageError"></small>
 
-    <!-- Bouton -->
-    <button class="btn-submit" type="submit">
-        Envoyer
-    </button>
+                    <!-- Bouton -->
+                    <button class="btn-submit" type="submit">
+                        Envoyer
+                    </button>
 
-    <!-- Message de succès -->
-    <p id="successMessage" class="success"></p>
+                    <!-- Message de succès -->
+                    <p id="successMessage" class="success"></p>
 
-</form>
+                </form>
 
 
-</div>
+            </div>
 
 
 
 
 
-<!-- INFORMATIONS -->
+            <!-- INFORMATIONS -->
 
 
-<div class="contact-info">
+            <div class="contact-info">
 
 
-<h2>Informations</h2>
+                <h2>Informations</h2>
 
 
-<p>📍 Dakar, Sénégal</p>
+                <p>📍 Dakar, Sénégal</p>
 
-<p>📞 +221 77 123 45 67</p>
+                <p>📞 +221 77 123 45 67</p>
 
-<p>✉ contact@africonnectsummit.com</p>
+                <p>✉ contact@africonnectsummit.com</p>
 
 
-<p>
-Notre équipe est disponible pour répondre
-à toutes vos questions concernant l'événement.
-</p>
+                <p>
+                    Notre équipe est disponible pour répondre
+                    à toutes vos questions concernant l'événement.
+                </p>
 
 
-</div>
+            </div>
 
 
-</section>
+        </section>
 
 
 
 
 
 
-<!-- FAQ -->
+        <!-- FAQ -->
 
-<section class="faq">
+        <section class="faq">
 
 
-<h2>Questions fréquentes</h2>
+            <h2>Questions fréquentes</h2>
 
 
 
-<div class="faq-item">
+            <div class="faq-item">
 
-<input type="checkbox" id="q1">
+                <input type="checkbox" id="q1">
 
-<label for="q1">
-Comment participer ?
-</label>
+                <label for="q1">
+                    Comment participer ?
+                </label>
 
-<p>
-Inscrivez-vous via le formulaire d'inscription.
-</p>
+                <p>
+                    Inscrivez-vous via le formulaire d'inscription.
+                </p>
 
-</div>
+            </div>
 
 
 
-<div class="faq-item">
+            <div class="faq-item">
 
-<input type="checkbox" id="q2">
+                <input type="checkbox" id="q2">
 
-<label for="q2">
-La conférence est-elle payante ?
-</label>
+                <label for="q2">
+                    La conférence est-elle payante ?
+                </label>
 
-<p>
-Plusieurs formules de participation sont proposées.
-</p>
+                <p>
+                    Plusieurs formules de participation sont proposées.
+                </p>
 
-</div>
+            </div>
 
 
 
 
-<div class="faq-item">
+            <div class="faq-item">
 
-<input type="checkbox" id="q3">
+                <input type="checkbox" id="q3">
 
-<label for="q3">
-Recevrai-je un certificat ?
-</label>
+                <label for="q3">
+                    Recevrai-je un certificat ?
+                </label>
 
-<p>
-Oui, un certificat sera délivré après l'événement.
-</p>
+                <p>
+                    Oui, un certificat sera délivré après l'événement.
+                </p>
 
-</div>
+            </div>
 
 
 
 
-<div class="faq-item">
+            <div class="faq-item">
 
-<input type="checkbox" id="q4">
+                <input type="checkbox" id="q4">
 
-<label for="q4">
-Puis-je annuler mon inscription ?
-</label>
+                <label for="q4">
+                    Puis-je annuler mon inscription ?
+                </label>
 
-<p>
-Oui, selon les conditions d'annulation.
-</p>
+                <p>
+                    Oui, selon les conditions d'annulation.
+                </p>
 
-</div>
+            </div>
 
 
 
 
-<div class="faq-item">
+            <div class="faq-item">
 
-<input type="checkbox" id="q5">
+                <input type="checkbox" id="q5">
 
-<label for="q5">
-Les repas sont-ils inclus ?
-</label>
+                <label for="q5">
+                    Les repas sont-ils inclus ?
+                </label>
 
-<p>
-Oui, pendant les trois jours du sommet.
-</p>
+                <p>
+                    Oui, pendant les trois jours du sommet.
+                </p>
 
-</div>
+            </div>
 
 
-</section>
+        </section>
 
 
 
 
 
-<!-- CARTE -->
+        <!-- CARTE -->
 
-<section class="map">
+        <section class="map">
 
 
-<h2>Lieu de l'événement</h2>
+            <h2>Lieu de l'événement</h2>
 
 
-<iframe
-src="https://www.google.com/maps?q=Dakar&output=embed"
-width="100%"
-height="400"
-loading="lazy">
-</iframe>
+            <iframe src="https://www.google.com/maps?q=Dakar&output=embed" height="400" loading="lazy">
+            </iframe>
 
 
-</section>
+        </section>
 
 
 
-</main>
+    </main>
 
 
 
 
 
-<!-- FOOTER -->
+    <!-- FOOTER -->
 
 
-<footer>
+    <footer>
 
-    <div>
-        <h3>AfriConnect Summit</h3>
-        <p>L'événement incontournable de la Tech africaine.</p>
-    </div>
-
-    <div>
-        <h3>Navigation</h3>
-
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="programme.html">Programme</a></li>
-            <li><a href="intervenants.html">Intervenants</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </div>
-
-    <div>
-        <h3>Suivez-nous</h3>
-
-        <div class="socials">
-            <a href="#">Facebook</a>
-            <a href="#">LinkedIn</a>
-            <a href="#">Twitter</a>
+        <div>
+            <h3>AfriConnect Summit</h3>
+            <p>L'événement incontournable de la Tech africaine.</p>
         </div>
-    </div>
-    <p class="copyright">
-    © <span id="year"></span> AfriConnect Summit. Tous droits réservés.
-</p>
 
-<button class="top-btn" id="topBtn">⬆️</button>
+        <div>
+            <h3>Navigation</h3>
 
-</footer>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="intervenants.html">Intervenants</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Suivez-nous</h3>
+
+            <div class="socials">
+                <a href="#">Facebook</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+        <p class="copyright">
+            © <span id="year"></span> AfriConnect Summit. Tous droits réservés.
+        </p>
+
+        <button class="top-btn" id="topBtn">⬆️</button>
+
+    </footer>
 
 
-<script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 
 
 </body>
